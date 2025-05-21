@@ -46,7 +46,7 @@ $securePassword = ConvertTo-SecureString 'admin@123' -AsPlainText -Force
 $cred = New-Object System.Management.Automation.PSCredential ('sist\itadmin', $securePassword)
 
 # Define the OU path where the computer will be added
-$ouPath = "OU=CLASSROOM 319,DC=sist,DC=com"
+$ouPath = "OU=Class_Room-319,DC=sist,DC=com"
 
 # Define parameters for Add-Computer
 $addComputerSplat = @{
